@@ -1,0 +1,71 @@
+<style>*{color:black;}form{padding:10px;margin:10px;border-radius:20px;border:1px solid black;background-color: white;width: 300px;}</style>
+<body>
+    <canvas style="position:absolute; z-index:-1;" id="particlescanvas"></canvas>
+</body>
+<style>body{background-color:black}*{overflow:hidden;margin:0;padding:0;}</style>
+<script src="/particles.js"></script>
+<script>
+const canvas = document.getElementById('particlescanvas');
+
+function fix(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+fix()
+
+window.addEventListener('resize',()=>{
+    fix()
+})
+
+const instance = new ParticlesSquared('particlescanvas');
+
+instance.load({
+    "amount": 50,
+    "size": 10,
+    "speed": 1,
+    "color": "rgba(255, 255, 0, 0.5)",
+    "shape": "star",
+    "direction": "random",
+    "straight": false,
+    "effects": {
+        "clicking": {
+            "enabled": true,
+            "amount": 10,
+            "speed": 2,
+            "lifespan": 100
+        },
+        "hover": {
+            "enabled": true,
+            "amount": 1,
+            "speed": 0.5,
+            "lifespan": 100
+        }
+    }
+})
+
+instance.load({
+    "amount": 50,
+    "size": 4,
+    "speed": 0.5,
+    "color": "rgba(255, 255, 255, 0.5)",
+    "shape": "circle",
+    "direction": "top",
+    "straight": false,
+    "effects": {
+        "clicking": {
+            "enabled": true,
+            "amount": 50,
+            "speed": 2,
+            "lifespan": 200
+        },
+        "hover": {
+            "enabled": true,
+            "amount": 1,
+            "speed": 0.5,
+            "lifespan": 100
+        }
+    }
+})
+
+instance.start();
+</script>
