@@ -1,10 +1,10 @@
 # **Particles²**
 ![Static Badge](https://img.shields.io/badge/Particles%C2%B2_Version-1.0.0-blue) ![GitHub Repo stars](https://img.shields.io/github/stars/JobiDev/ParticlesSquared)
 <br><br>
-An easy to use & lightweight particle library meant to be a replacement for [particles.js](https://github.com/VincentGarreau/particles.js/) !<br>
+An easy to use & lightweight particle library meant to be a replacement for [particles.js](https://github.com/VincentGarreau/particles.js/)!<br>
 If you like the repo, or use it for your sites please give it a star⭐!
 # Demo
-Check our the demo [here!](https://jobidev.github.io/ParticlesSquared/demo.html)
+Check our the demo <a href="https://jobidev.github.io/ParticlesSquared/demo.html" target="_blank">here</a>!
 # Features
 * Multiple "instances" of particles bound to one canvas
 * Multiple different shapes for your particles
@@ -17,7 +17,7 @@ How to setup Particles²!
 ## Step 1 - Add
 Add a script into the head of your html like this!
 ```html
-<script src="https://raw.githubusercontent.com/JobiDev/ParticlesSquared/refs/heads/main/particles.js">
+<script src="https://cdn.jsdelivr.net/gh/JobiDev/ParticlesSquared/particles.min.js">
 <!-- Or where ever your P² script is -->
 ```
 ## Step 2 - Setup
