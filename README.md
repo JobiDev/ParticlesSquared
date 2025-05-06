@@ -37,8 +37,8 @@ const ParticlesInstance = new ParticlesSquared('particlesCanvas');
 Once you've confirmed the script is added onto your site properly, we need to configure it!
 
 Now, there are several ways to configure P², heres an example config.
-```json
-{
+```js
+let config = {
     "amount": 50,
     "size": 10,
     "speed": 1,
