@@ -17,7 +17,7 @@ How to setup Particles²!
 ## Step 1 - Add
 Add a script into the head of your html like this!
 ```html
-<script src="https://cdn.jsdelivr.net/gh/JobiDev/ParticlesSquared/particles.min.js">
+<script src="https://cdn.jsdelivr.net/gh/JobiDev/ParticlesSquared/particles.min.js"></script>
 <!-- Or where ever your P² script is -->
 ```
 ## Step 2 - Setup
